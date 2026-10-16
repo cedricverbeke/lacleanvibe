@@ -15,6 +15,11 @@ jobs:
         with:
           node-version: '20'
 
+# ---> AJOUTEZ CETTE ÉTAPE <---
+      - name: Install dependencies
+        run: npm ci
+
+
       - name: Run Supabase DB Ping
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
