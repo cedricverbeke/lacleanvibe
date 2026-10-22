@@ -17,7 +17,7 @@ jobs:
 
 # ---> AJOUTEZ CETTE ÉTAPE <---
       - name: Install dependencies
-        run: npm ci
+        run: npm install @supabase/supabase-js
 
 
       - name: Run Supabase DB Ping
